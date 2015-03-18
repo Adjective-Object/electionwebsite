@@ -1,35 +1,44 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400);
-@import url(http://fonts.googleapis.com/css?family=Ovo);
-@import url(http://fonts.googleapis.com/css?family=Arvo:400,400italic);
-
 body, html {
   background: #292929;
   color: #333;
-  font: 1em/1.5em Lato, Helvetica, Arial, sans-serif;
   height: 100%;
   margin: 0;
   padding: 0;
   width: 100%;
+  line-height: 3em;
+}
+
+*, *:after, *:before {
+  font-family: Indie Flower, cursive;
+  font-weight: bold;
 }
 
 ::selection {
-  background: #a4a4a4;
+  background-color: red;
 }
 
 h1 {
-  font: italic 2em/1em 'Arvo';
   margin: 0;
-  text-align: center;
+  text-align: right;
 }
 
 h2 {
-  font: 2.2em/0.5em 'Ovo';
   text-shadow: 0 1px 0 #333;
 }
 
-h3 {
-  font: italic 1em/1em 'Arvo';
+h3, #content, #navleft, button{
+    -webkit-box-shadow: -53px -30px 30px 22px rgba(50, 255, 50, 1);
+  -moz-box-shadow:    -53px -30px 30px 22px rgba(50, 255, 50, 1);
+  box-shadow:         -53px -30px 30px 22px rgba(50, 255, 50, 1);
 }
+
+
+h1, #coverleft, #more {
+    -webkit-box-shadow: inset -53px -30px 30px 22px rgba(50, 50, 255, 1);
+  -moz-box-shadow:   inset -53px -30px 30px 22px rgba(50, 50, 255, 1);
+  box-shadow:        inset  -53px -30px 30px 22px rgba(50, 50, 255, 1);
+}
+
 
 .sticky {
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);
@@ -42,7 +51,7 @@ h3 {
 }
 
   .contentpush {
-    padding-top: 5em !important;
+    padding-top: 5em ;
   }
 
 .maxcontainer {
@@ -65,7 +74,6 @@ header {
   #and {
     background: #fff;
     border-radius: 100%;
-    font-family: 'Ovo';
     font-size: 2em;
     left: 50%;
     margin-left: -1em;
@@ -83,43 +91,44 @@ header {
     height: 100%;
     width: 50%;
     z-index: -1;
+    background-repeat: repeat;
   }
 
   #coverleft {
-    background-image: url(../img/cover_jon_2000.jpg);
+    background-image: url(../img/fire.gif);
   }
 
   #coverright {
-      background-image: url(../img/cover_nick_2000.jpg);
+    background-image: url(../img/fire.gif);
   }
 
   @media only screen and (max-width: 1500px) {
     #coverleft {
-      background-image: url(../img/cover_jon_1500.jpg);
+    background-image: url(../img/fire.gif);
     }
 
     #coverright {
-      background-image: url(../img/cover_nick_1500.jpg);
+    background-image: url(../img/fire.gif);
     }
   }
 
   @media only screen and (max-width: 1000px) {
     #coverleft {
-      background-image: url(../img/cover_jon_1000.jpg);
+    background-image: url(../img/fire.gif);
     }
 
     #coverright {
-      background-image: url(../img/cover_nick_1000.jpg);
+    background-image: url(../img/fire.gif);
     }
   }
 
   @media only screen and (max-width: 500px) {
     #coverleft {
-      background-image: url(../img/cover_jon_500.jpg);
+    background-image: url(../img/fire.gif);
     }
 
     #coverright {
-      background-image: url(../img/cover_nick_500.jpg);
+    background-image: url(../img/fire.gif);
     }
   }
 
@@ -134,30 +143,30 @@ header {
   }
 
   #coverleft::before {
-    background-color: rgba(51, 151, 251, 0.45);
+    background-color: rgba(51, 255, 251, 0.45);
     border-right: 1px solid #fff;
     left: 0;
   }
 
     #coverleft:hover::before {
-      background-color: rgba(61, 169, 250, 0.5);
+      background-color: rgba(120, 169, 0, 0.5);
     }
 
   #coverright::before {
-    background-color: rgba(88, 252, 97, 0.45);
+      background-color: rgba(120, 169, 0, 0.5);
     border-left: 1px solid #fff;
     left: 50%;
   }
 
     #coverright:hover::before {
-      background-color: rgba(88, 252, 97, 0.5);
+      background-color: rgba(120, 169, 0, 0.5);
     }
 
   .name {
     color: #fff;
-    font: 2em/2em 'Ovo', serif;
+    font-size:120px;
     margin-top: -1em;
-    overflow: hidden;
+    overflow: scroll;
     position: absolute;
     text-align: center;
     text-overflow: ellipsis;
@@ -235,7 +244,7 @@ nav {
     }
 
     #title {
-      font-weight: 400 !important;
+      font-weight: 400 ;
     }
 
   #navright {
@@ -329,9 +338,9 @@ nav {
 
   #vote h1, #vote p, #countdown {
     background: rgba(255, 255, 255, 0.5);
-    box-sizing: border-box !important;
+    box-sizing: border-box ;
     color: #444;
-    padding: 1em 0 !important;
+    padding: 1em 0 ;
     position: absolute;
     text-shadow: 0 2px 0 #fff;
     width: 100%;
@@ -339,12 +348,12 @@ nav {
   }
 
   #vote h1 {
-    padding-bottom: 0.5em !important;
+    padding-bottom: 0.5em ;
   }
 
   #vote p {
     margin-top: 5em;
-    padding-top: 0 !important;
+    padding-top: 0 ;
   }
 
   #map {
@@ -354,18 +363,18 @@ nav {
   }
 
   .gm-style img {
-    background: none !important;
-    max-width: none !important;
+    background: none ;
+    max-width: none ;
   }
 
   .gm-style-iw {
     color: #000;
     display: block;
-    height: auto !important;
+    height: auto ;
     line-height: 18px;
-    overflow: hidden !important;
+    overflow: hidden ;
     white-space: nowrap;
-    width: 100% !important;
+    width: 100% ;
   }
 
   #gmap_canvas {
@@ -447,39 +456,39 @@ footer {
 
 @media only screen and (max-width: 600px) {
   .cover, #coverleft::before, #coverright::before  {
-    height: 50% !important;
+    height: 50% ;
     text-align: center;
-    width: 100% !important;
+    width: 100% ;
   }
 
   #coverleft::before {
     border-bottom: 1px solid #fff;
-    border-right: 0 !important;
+    border-right: 0 ;
   }
 
   #coverright::before {
-    border-left: 0 !important;
+    border-left: 0 ;
     border-top: 1px solid #fff;
-    left: 0 !important;
-    top: 50% !important;
+    left: 0 ;
+    top: 50% ;
   }
 
   .name {
-    position: relative !important;
-    top: 40% !important;
-    width: 100% !important;
+    position: relative ;
+    top: 40% ;
+    width: 100% ;
   }
 
   .person {
-    width: 100% !important;
+    width: 100% ;
   }
 
   #first {
     border-bottom: 1px solid #888;
-    border-right: 0 !important;
-    margin-right: 2em !important;
-    padding-bottom: 1em !important;
-    padding-right: 0 !important;
+    border-right: 0 ;
+    margin-right: 2em ;
+    padding-bottom: 1em ;
+    padding-right: 0 ;
   }
 }
 
@@ -489,21 +498,21 @@ footer {
   }
 
   #navright {
-    display: none !important;
+    display: none ;
   }
 }
 
 @media only screen and (max-width: 950px) {
   .goal {
-    margin: 1.5em 2.5% !important;
-    width: 40% !important;
+    margin: 1.5em 2.5% ;
+    width: 40% ;
   }
 }
 
 @media only screen and (max-width: 500px) {
   .goal {
-    margin: 1em 0 !important;
-    width: 100% !important;
+    margin: 1em 0 ;
+    width: 100% ;
   }
 }
 
@@ -512,17 +521,210 @@ footer {
     all and (min--moz-device-pixel-ratio: 1.5),
     all and (min-device-pixel-ratio: 1.5) {
   .button {
-    background: url(../img/twitter@2x.png) no-repeat 1em 0.7em !important;
-    background-size: 26px auto !important;
+    background: url(../img/twitter@2x.png) no-repeat 1em 0.7em ;
+    background-size: 26px auto ;
   }
 
   .button:hover {
-    background: #d6d9dc url(../img/twitter@2x_hover.png) no-repeat 1em 0.7em !important;
-    background-size: 26px auto !important;
+    background: #d6d9dc url(../img/twitter@2x_hover.png) no-repeat 1em 0.7em ;
+    background-size: 26px auto ;
   }
 
   footer {
     background: #363f48 url(../img/cssu@2x.png) no-repeat center right;
-    background-size: 310px auto !important;
+    background-size: 310px auto ;
   }
+}
+
+
+@-webkit-keyframes spin {  
+    0%  {
+        transform:rotate(0deg);
+        color: red;
+    }  
+    10%  {
+        transform:rotate(1200deg);  
+        color: #C0FFEE;
+    }  
+    50%  {
+        transform:rotate(2400deg);  
+        color: rgba(0,0,0,0);
+    }  
+    60%  {
+        transform:rotate(30deg);  
+        color: #FF00FF;
+    }  
+    100% {
+        transform:rotate(360deg);  
+        color: #D3ADB3;
+    }
+}
+
+@-keyframes spin {  
+    0%  {
+        transform:rotate(0deg);
+        color: red;
+    }  
+    50%  {
+        transform:rotate(50deg);  
+        color: green;
+    }  
+    100% {
+        transform:rotate(360deg);  
+        color: blue;
+    }
+}
+
+.spin{
+  -webkit-animation: spin 4s infinite;
+  animation: spin 3s infinite;
+  transform-origin: 50% 50%;
+}
+
+
+
+@-webkit-keyframes seizure {  
+    0% {
+      background-color: #FFA00F;
+    }
+    10% {
+      background-color: #3124FF;
+    }
+    20% {
+      background-color: #F234F3;
+    }
+    50% {
+      background-color: #420420;
+    }
+    80% {
+      background-color: #00FF00;
+    }
+    90% {
+      background-color: #22FF00;
+    }
+    100% {
+      background-color: #F0F022;
+    }
+}
+
+@keyframes seizure {  
+    0% {
+      background-color: #FFA00F;
+    }
+    10% {
+      background-color: #3124FF;
+    }
+    20% {
+      background-color: #F234F3;
+    }
+    50% {
+      background-color: #420420;
+    }
+    80% {
+      background-color: #00FF00;
+    }
+    90% {
+      background-color: #22FF00;
+    }
+    100% {
+      background-color: #F0F022;
+    }
+   
+}
+
+
+.seizure{
+  -webkit-animation: seizure 0.2s infinite;
+  animation: seizure 1s infinite;
+
+}
+
+
+
+
+@-webkit-keyframes skew {  
+    0% {
+      transform:skew(10deg);
+      transform-origin: 10% 10%;
+    }
+    10% {
+      transform:skew(30deg);
+      transform-origin: 40% 10%;
+    }
+    20% {
+      transform:skew(420deg);
+      transform-origin: 40% 40%;
+    }
+    50% {
+      transform:skew(100deg);
+      transform-origin: 42% 0%;
+    }
+    80% {
+      transform:skew(10deg);
+      transform-origin: 3% 100%;
+    }
+    90% {
+      transform:skew(40deg);
+      transform-origin: 50% 50%;
+    }
+    100% {
+      transform:skew(0deg);
+      transform-origin: 0% 0%;
+    }
+}
+
+@keyframes skew {  
+    0% {
+      transform:skew(10deg);
+      transform-origin: 10% 10%;
+    }
+    10% {
+      transform:skew(30deg);
+      transform-origin: 40% 10%;
+    }
+    20% {
+      transform:skew(420deg);
+      transform-origin: 40% 40%;
+    }
+    50% {
+      transform:skew(100deg);
+      transform-origin: 42% 0%;
+    }
+    80% {
+      transform:skew(10deg);
+      transform-origin: 3% 100%;
+    }
+    90% {
+      transform:skew(40deg);
+      transform-origin: 50% 50%;
+    }
+    100% {
+      transform:skew(0deg);
+      transform-origin: 0% 0%;
+    }
+}
+
+
+
+.skew{
+  -webkit-animation: skew 0.2s infinite;
+  animation: skew 1s infinite;
+
+}
+
+.delay {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.slow {
+  -webkit-animation-duration: 5s !important;
+  animation-duration: 5s !important;
+}
+
+.stars {
+  background-color: transparent !important;
+  background-image: url(../img/stars.gif) !important;
+  background-repeat: repeat !important;
+  background-attachment: fixed !important;
 }
